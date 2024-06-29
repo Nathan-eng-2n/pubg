@@ -1,3 +1,11 @@
+/* Estilos básicos de reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos do corpo e do cabeçalho */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -81,6 +89,12 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
+.player-profiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 .player {
     background: linear-gradient(45deg, rgba(0, 255, 0, 0.8), rgba(0, 0, 0, 0.4)); /* Degradê verde para preto claro */
     padding: 20px;
@@ -88,16 +102,15 @@ h2 {
     color: #fff; /* Texto branco */
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    width: 45%; /* Ajustar a largura do contêiner do jogador */
+    width: 10%; /* Ajustar a largura do contêiner do jogador */
     margin: 10px; /* Espaçamento entre jogadores */
     display: inline-block; /* Exibir os jogadores lado a lado */
     vertical-align: top; /* Alinhar ao topo */
 }
 
 .player img {
-    width: 50px;
-    height: auto;
-    border: 3px solid #fff; /* Borda branca */
+    width: 100%; /* Ajustar a largura da imagem para ocupar todo o espaço disponível */
+    height: auto; /* Altura automática proporcional */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
