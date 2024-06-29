@@ -1,4 +1,3 @@
-/* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -82,6 +81,12 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
+.player-profiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 .player {
     background: linear-gradient(45deg, rgba(0, 255, 0, 0.8), rgba(0, 0, 0, 0.4)); /* Degradê verde para preto claro */
     padding: 20px;
@@ -89,10 +94,15 @@ h2 {
     color: #fff; /* Texto branco */
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    width: 45%; /* Ajustar a largura do contêiner do jogador */
+    width: calc(45% - 20px); /* Largura do perfil, com margem */
     margin: 10px; /* Espaçamento entre jogadores */
-    display: inline-block; /* Exibir os jogadores lado a lado */
-    vertical-align: top; /* Alinhar ao topo */
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+    .player {
+        width: calc(100% - 20px); /* Ajusta para ocupar a largura total em telas menores */
+    }
 }
 
 .player img {
