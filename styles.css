@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: #860a0a;
+    background-image: url('https://i.gadgets360cdn.com/large/pubg_new_state_image_1_1636703566664.jpg?downsize=950:*');
+    background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
+}
+
+header {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    transition: color 0.3s, border-color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff4500;
+    border-color: #ff4500;
+}
+
+h1 {
+    font-size: 3em;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #000, #fff);
+    background-clip: text;
+    color: transparent;
+    border: 5px solid transparent;
+    border-image: linear-gradient(45deg, #000, #fff) 1;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7), 4px 4px 10px rgba(255, 255, 255, 0.7);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7), 4px 4px 10px rgba(255, 255, 255, 0.7);
+    z-index: 1;
+}
+
+h1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    clip-path: polygon(10% 0%, 20% 10%, 25% 0%, 40% 10%, 50% 0%, 65% 10%, 70% 0%, 85% 10%, 90% 0%, 95% 10%, 100% 0%, 100% 90%, 90% 100%, 80% 90%, 70% 100%, 60% 90%, 50% 100%, 40% 90%, 30% 100%, 20% 90%, 10% 100%, 0% 90%, 0% 0%);
+    pointer-events: none;
+    z-index: -1;
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 40px;
+    color: #fff;
+}
+
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.photo-gallery img {
+    width: 200px;
+    height: auto;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.player-profiles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.player {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: 200px;
+}
+
+.player img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-bottom: 10px;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
+}
