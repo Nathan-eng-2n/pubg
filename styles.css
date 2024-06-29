@@ -1,3 +1,4 @@
+/* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -65,7 +66,7 @@ h2 {
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7); /* Sombra escura para efeito 3D */
 }
 
-.inicio-container, .video-container, .photo-gallery, .player-profiles {
+.inicio-container, .photo-gallery, .player-profiles {
     background: linear-gradient(45deg, rgba(0, 255, 0, 0.8), rgba(0, 0, 0, 0.4)); /* Degradê verde para preto claro */
     padding: 20px;
     border-radius: 10px;
@@ -88,15 +89,27 @@ h2 {
     color: #fff; /* Texto branco */
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    width: 150px; /* Ajustar a largura do contêiner do jogador */
+    width: 45%; /* Ajustar a largura do contêiner do jogador */
+    margin: 10px; /* Espaçamento entre jogadores */
+    display: inline-block; /* Exibir os jogadores lado a lado */
+    vertical-align: top; /* Alinhar ao topo */
 }
 
 .player img {
-    width: 100px; /* Ajustar a largura da imagem */
-    height: 100px; /* Ajustar a altura da imagem */
-    border-radius: 50%;
+    width: 50px;
+    height: auto;
     border: 3px solid #fff; /* Borda branca */
-    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-/* Estilo para o texto "Bem-vindo à
+footer {
+    background: linear-gradient(45deg, rgba(0, 255, 0, 0.8), rgba(0, 0, 0, 0.4)); /* Degradê verde para preto claro */
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #fff; /* Texto branco */
+}
