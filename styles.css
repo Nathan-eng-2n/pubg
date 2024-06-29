@@ -81,12 +81,6 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-.player-profiles {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
 .player {
     background: linear-gradient(45deg, rgba(0, 255, 0, 0.8), rgba(0, 0, 0, 0.4)); /* Degradê verde para preto claro */
     padding: 20px;
@@ -94,15 +88,10 @@ h2 {
     color: #fff; /* Texto branco */
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    width: calc(45% - 20px); /* Largura do perfil, com margem */
+    width: 45%; /* Ajustar a largura do contêiner do jogador */
     margin: 10px; /* Espaçamento entre jogadores */
-}
-
-/* Ajuste para telas menores */
-@media (max-width: 768px) {
-    .player {
-        width: calc(100% - 20px); /* Ajusta para ocupar a largura total em telas menores */
-    }
+    display: inline-block; /* Exibir os jogadores lado a lado */
+    vertical-align: top; /* Alinhar ao topo */
 }
 
 .player img {
@@ -122,4 +111,23 @@ footer {
     bottom: 0;
     width: 100%;
     color: #fff; /* Texto branco */
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+    .player {
+        width: calc(100% - 20px); /* Ajusta para ocupar a largura total em telas menores */
+    }
+
+    /* Ajuste para perfis de jogadores em telas menores */
+    .player-profiles {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .photo-gallery img {
+        width: 100%; /* Imagens ocupam toda a largura em telas menores */
+        margin-bottom: 20px; /* Espaçamento entre imagens */
+    }
 }
