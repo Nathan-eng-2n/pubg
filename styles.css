@@ -34,6 +34,7 @@ nav ul {
     justify-content: center;
     gap: 20px;
     font-family: 'Arial Black', Gadget, sans-serif; /* Fonte estilizada */
+    z-index: 1000;
 }
 
 nav ul li {
@@ -66,11 +67,22 @@ h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra escura */
 }
 
+#leao {
+    width: 300px;
+    height: auto;
+    margin-right: 10px; /* Reduzido o espaçamento para aproximar o texto da imagem */
+}
+
+.h2-container {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
 h2 {
     font-size: 2em;
-    margin-top: 40px;
     color: #fff; /* Texto branco */
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7); /* Sombra escura para efeito 3D */
+    text-shadow: 3px 3px 5px #1fa782b3; /* Sombra escura para efeito 3D */
 }
 
 .inicio-container, .photo-gallery, .player-profiles {
@@ -79,6 +91,7 @@ h2 {
     border-radius: 10px;
     margin: 20px;
     color: #fff; /* Texto branco */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra escura */
 }
 
 .photo-gallery img {
