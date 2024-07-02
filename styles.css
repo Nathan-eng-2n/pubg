@@ -107,6 +107,23 @@ h2 {
     flex-wrap: wrap;
     justify-content: space-around;
 }
+/* Estilos para os botões "Anterior" e "Próximo" */
+.video-button {
+    padding: 10px 20px; /* Ajuste o padding conforme necessário */
+    margin: 10px; /* Ajuste a margem conforme necessário */
+    background-color: rgb(21, 77, 23); /* Cor de fundo padrão */
+    color: hsl(150, 4%, 91%); /* Cor do texto */
+    border: none; /* Sem borda */
+    cursor: pointer; /* Cursor ao passar */
+    font-size: 25px; /* Tamanho da fonte */
+    font-family: Arial, sans-serif; /* Fonte */
+}
+
+/* Estilo ao passar o mouse sobre os botões */
+.video-button:hover {
+    background-color: #45a049; /* Cor de fundo ao passar o mouse */
+}
+
 
 .player {
     background: linear-gradient(45deg, rgba(0, 255, 0, 0.8), rgba(0, 0, 0, 0.4)); /* Degradê verde para preto claro */
