@@ -72,7 +72,7 @@ h1 {
     height: auto;
     margin-right: 10px; /* Reduzido o espaçamento para aproximar o texto da imagem */
 }
-
+.icones {margin-left: 900px; /* Ajuste o valor conforme necessário */}
 .h2-container {
     display: flex;
     align-items: center;
