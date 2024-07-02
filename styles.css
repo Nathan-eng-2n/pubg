@@ -111,7 +111,7 @@ h2 {
 .video-button {
     padding: 10px 20px; /* Ajuste o padding conforme necessário */
     margin: 10px; /* Ajuste a margem conforme necessário */
-    background-color: rgb(21, 77, 23); /* Cor de fundo padrão */
+    background-color: hwb(122 4% 65% / 0.374); /* Cor de fundo padrão */
     color: hsl(150, 4%, 91%); /* Cor do texto */
     border: none; /* Sem borda */
     cursor: pointer; /* Cursor ao passar */
@@ -121,7 +121,7 @@ h2 {
 
 /* Estilo ao passar o mouse sobre os botões */
 .video-button:hover {
-    background-color: #45a049; /* Cor de fundo ao passar o mouse */
+    background-color: #084a0abd; /* Cor de fundo ao passar o mouse */
 }
 
 
