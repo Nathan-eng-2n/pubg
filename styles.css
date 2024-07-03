@@ -25,7 +25,8 @@ header {
     text-align: center;
     color: #fff; /* Texto branco */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    width:100%;
+    width: 100vw; /* Ajuste para ocupar toda a largura da viewport */
+    box-sizing: border-box; /* Inclui o padding e borda dentro da largura */
 }
 
 nav ul {
